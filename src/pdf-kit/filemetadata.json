@@ -1,0 +1,3363 @@
+{
+    "sys_topLevel":[
+            {
+                "name": "userdetail",
+                "title": "Personal Information",
+                "type": "SECTION",
+                "marker": "start",
+                "visible": false,
+                "canUpdate": true
+            },
+            {
+                "name": "residentID",
+                "title": "Resident ID",
+                "type": "SEQUENCE",
+                "prefix": "RES-ID-",
+                "initialCount": "00001",
+                "order": 1,
+                "visible": true,
+                "visible_summary": true,
+                "info": "",
+                "step": 1,
+                "disable": true,
+                "audit": true,
+                "canUpdate": true
+            },
+            {
+                "name": "",
+                "title": "",
+                "type": "SUBSECTION",
+                "canUpdate": true
+            },
+            {
+                "name": "firstName",
+                "title": "First Name",
+                "type": "TEXTBOX",
+                "placeHolder": "Enter First Name",
+                "info": "Enter User's First Name",
+                "required": true,
+                "visible": true,
+                "label": "First Name",
+                "labelSuffix": "type_name",
+                "visibleOnCsv": true,
+                "displayOnCsv": true,
+                "columnWidth": 130,
+                "canUpdate": true,
+                "audit": true
+            },
+            {
+                "name": "middleName",
+                "title": "Middle Name",
+                "type": "TEXTBOX",
+                "info": "Enter User's Middle Name",
+                "placeHolder": "Enter Middle Name",
+                "required": false,
+                "visible": false,
+                "displayOnCsv": true,
+                "columnWidth": 130,
+                "canUpdate": true,
+                "audit": true
+            },
+            {
+                "name": "lastName",
+                "title": "Last Name",
+                "type": "TEXTBOX",
+                "info": "Enter User's Last Name",
+                "placeHolder": "Enter Last Name",
+                "required": true,
+                "visible": true,
+                "columnWidth": 130,
+                "displayOnCsv": true,
+                "canUpdate": true,
+                "audit": true
+            },
+            {
+                "name": "email",
+                "title": "Email",
+                "type": "EMAIL",
+                "info": "Enter Unique & Valid Email Address",
+                "placeHolder": "Enter Contact Email",
+                "required": false,
+                "visible": true,
+                "transient": false,
+                "displayOnCsv": true,
+                "canUpdate": true,
+                "audit": true
+            },
+            {
+                "name": "phoneNumber",
+                "title": "Phone Number",
+                "type": "PHONENUMBER",
+                "placeHolder": "Enter Phone Number",
+                "info": "Enter Phone Number",
+                "visible": true,
+                "required": false,
+                "canUpdate": true,
+                "audit": true,
+                "searchable": false
+            },
+            {
+                "name": "gender",
+                "title": "Gender",
+                "type": "RADIO",
+                "placeHolder": "Select Gender",
+                "validationRegEx": "",
+                "required": false,
+                "disable": false,
+                "visible": false,
+                "multiSelect": false,
+                "values": [
+                    {
+                        "id": "MALE",
+                        "title": "Male"
+                    },
+                    {
+                        "id": "FEMALE",
+                        "title": "Female"
+                    },
+                    {
+                        "id": "OTHERS",
+                        "title": " Others"
+                    }
+                ],
+                "canUpdate": true,
+                "audit": true
+            },
+            {
+                "name": "dateOfBirth",
+                "title": "Date of Birth",
+                "type": "DATE",
+                "format": "MM-dd-yyyy",
+                "mobileFormat": "MM/DD/YYYY",
+                "placeHolder": "Select Date Of Birth",
+                "info": "Select Date Of Birth",
+                "validationRegEx": "",
+                "visibleOnCsv": false,
+                "displayOnCsv": true,
+                "required": false,
+                "canUpdate": true,
+                "defaultValue": false
+            },
+            {
+                "name": "height",
+                "title": "Height(feet'inch\")",
+                "type": "LIST",
+                "placeHolder": "Select Height and inch",
+                "validationRegEx": "",
+                "required": false,
+                "visible": false,
+                "displayOnCsv": false,
+                "info": "Select Height and inch",
+                "values": [
+                    {
+                        "value": "4’0\"",
+                        "id": "4’0\""
+                    },
+                    {
+                        "value": "4’1\"",
+                        "id": "4’1\""
+                    },
+                    {
+                        "value": "4’2\"",
+                        "id": "4’2\""
+                    },
+                    {
+                        "value": "4’3\"",
+                        "id": "4’3\""
+                    },
+                    {
+                        "value": "4’4\"",
+                        "id": "4’4\""
+                    },
+                    {
+                        "value": "4’5\"",
+                        "id": "4’5\""
+                    },
+                    {
+                        "value": "4’6\"",
+                        "id": "4’6\""
+                    },
+                    {
+                        "value": "4’7\"",
+                        "id": "4’7\""
+                    },
+                    {
+                        "value": "4’8\"",
+                        "id": "4’8\""
+                    },
+                    {
+                        "value": "4’9\"",
+                        "id": "4’9\""
+                    },
+                    {
+                        "value": "4’10\"",
+                        "id": "4’10\""
+                    },
+                    {
+                        "value": "4’11\"",
+                        "id": "4’11\""
+                    },
+                    {
+                        "value": "5’0\"",
+                        "id": "5’0\""
+                    },
+                    {
+                        "value": "5’1\"",
+                        "id": "5’1\""
+                    },
+                    {
+                        "value": "5’2\"",
+                        "id": "5’2\""
+                    },
+                    {
+                        "value": "5’3\"",
+                        "id": "5’3\""
+                    },
+                    {
+                        "value": "5’4\"",
+                        "id": "5’4\""
+                    },
+                    {
+                        "value": "5’5\"",
+                        "id": "5’5\""
+                    },
+                    {
+                        "value": "5’6\"",
+                        "id": "5’6\""
+                    },
+                    {
+                        "value": "5’7\"",
+                        "id": "5’7\""
+                    },
+                    {
+                        "value": "5’8\"",
+                        "id": "5’8\""
+                    },
+                    {
+                        "value": "5’9\"",
+                        "id": "5’9\""
+                    },
+                    {
+                        "value": "5’10\"",
+                        "id": "5’10\""
+                    },
+                    {
+                        "value": "5’11\"",
+                        "id": "5’11\""
+                    },
+                    {
+                        "value": "6’0\"",
+                        "id": "6’0\""
+                    },
+                    {
+                        "value": "6’1\"",
+                        "id": "6’1\""
+                    },
+                    {
+                        "value": "6’2\"",
+                        "id": "6’2\""
+                    },
+                    {
+                        "value": "6’3\"",
+                        "id": "6’3\""
+                    },
+                    {
+                        "value": "6’4\"",
+                        "id": "6’4\""
+                    },
+                    {
+                        "value": "6’5\"",
+                        "id": "6’5\""
+                    },
+                    {
+                        "value": "6’6\"",
+                        "id": "6’6\""
+                    },
+                    {
+                        "value": "6’7\"",
+                        "id": "6’7\""
+                    },
+                    {
+                        "value": "6’8\"",
+                        "id": "6’8\""
+                    },
+                    {
+                        "value": "6’9\"",
+                        "id": "6’9\""
+                    },
+                    {
+                        "value": "6’10\"",
+                        "id": "6’10\""
+                    },
+                    {
+                        "value": "6’11\"",
+                        "id": "6’11\""
+                    },
+                    {
+                        "value": "7’0\"",
+                        "id": "7’0\""
+                    },
+                    {
+                        "value": "7’1\"",
+                        "id": "7’1\""
+                    },
+                    {
+                        "value": "7’2\"",
+                        "id": "7’2\""
+                    },
+                    {
+                        "value": "7’3\"",
+                        "id": "7’3\""
+                    },
+                    {
+                        "value": "7’4\"",
+                        "id": "7’4\""
+                    },
+                    {
+                        "value": "7’5\"",
+                        "id": "7’5\""
+                    },
+                    {
+                        "value": "7’6\"",
+                        "id": "7’6\""
+                    },
+                    {
+                        "value": "7’7\"",
+                        "id": "7’7\""
+                    },
+                    {
+                        "value": "7’8\"",
+                        "id": "7’8\""
+                    },
+                    {
+                        "value": "7’9\"",
+                        "id": "7’9\""
+                    },
+                    {
+                        "value": "7’10\"",
+                        "id": "7’10\""
+                    },
+                    {
+                        "value": "7’11\"",
+                        "id": "7’11\""
+                    }
+                ],
+                "canUpdate": true,
+                "disable": false,
+                "multiSelect": false,
+                "audit": true
+            },
+            {
+                "name": "weight",
+                "title": "Weight(lbs)",
+                "type": "TEXTBOX",
+                "placeHolder": "Enter Weight in Pounds",
+                "visible": false,
+                "validationRegEx": "",
+                "disable": false,
+                "displayOnCsv": true,
+                "required": false,
+                "info": "Enter Weight in Pounds",
+                "canUpdate": true,
+                "audit": false
+            },
+            {
+                "name": "bloodType",
+                "title": "Blood Group",
+                "type": "LIST",
+                "placeHolder": "Select Blood Group",
+                "validationRegEx": "",
+                "required": false,
+                "disable": false,
+                "visible": false,
+                "defaultValue": [],
+                "multiSelect": false,
+                "values": [
+                    {
+                        "id": "O -ve",
+                        "value": "O -ve"
+                    },
+                    {
+                        "id": "O +ve",
+                        "value": "O +ve"
+                    },
+                    {
+                        "id": "A -ve",
+                        "value": "A -ve"
+                    },
+                    {
+                        "id": "A +ve",
+                        "value": "A +ve"
+                    },
+                    {
+                        "id": "B -ve",
+                        "value": "B -ve"
+                    },
+                    {
+                        "id": "B +ve",
+                        "value": "B +ve"
+                    },
+                    {
+                        "id": "AB -ve",
+                        "value": "AB -ve"
+                    },
+                    {
+                        "id": "AB +ve",
+                        "value": "AB +ve"
+                    }
+                ],
+                "canUpdate": true,
+                "audit": true
+            }, 
+            {
+                "name": "hobbies",
+                "title": "Select Hobbies",
+                "required": true,
+                "type": "CHECKBOX",
+                "visible": true,
+                "info": "Required:true, select one value",
+                "placeHolder": "Required:true, select one value",
+                "transient": true,
+                "showOnDetailHeader": true,
+                "values": [
+                    {
+                        "value": "Reading",
+                        "id": "Reading"
+                    },
+                    {
+                        "value": "Singing",
+                        "id": "Singing"
+                    },
+                    {
+                        "value": "Dancing",
+                        "id": "Dancing"
+                    }
+                ],
+                "description": "Please Check Value Above",
+                "canUpdate": true
+            },
+            {
+                "name": "language",
+                "title": "Language",
+                "type": "TEXTBOX",
+                "placeHolder": "Enter Language",
+                "visible": false,
+                "validationRegEx": "",
+                "disable": false,
+                "displayOnCsv": true,
+                "required": false,
+                "info": "Enter Language",
+                "canUpdate": true,
+                "audit": false
+            },
+            {
+                "name": "race",
+                "title": "Race",
+                "type": "LIST",
+                "placeHolder": "Select Gender",
+                "validationRegEx": "",
+                "required": false,
+                "disable": false,
+                "visible": false,
+                "multiSelect": false,
+                "values": [
+                    {
+                        "id": "White",
+                        "value": "White"
+                    },
+                    {
+                        "id": "African American",
+                        "value": "African American"
+                    },
+                    {
+                        "id": "Hispanic/Latino",
+                        "value": "Hispanic/Latino"
+                    },
+                    {
+                        "id": "Asian",
+                        "value": " Asian"
+                    },
+                    {
+                        "id": "American Indian",
+                        "value": " American Indian"
+                    },
+                    {
+                        "id": "Alaska Native",
+                        "value": " Alaska Native"
+                    },
+                    {
+                        "id": "Pacific Islander",
+                        "value": " Pacific Islander"
+                    },
+                    {
+                        "id": "Others",
+                        "value": " Others"
+                    }
+                ],
+                "canUpdate": true,
+                "audit": true
+            },
+            {
+                "name": "religiousPreference",
+                "title": "Religious Preference",
+                "type": "LIST",
+                "placeHolder": "Select Preference",
+                "validationRegEx": "",
+                "required": false,
+                "disable": false,
+                "visible": false,
+                "multiSelect": false,
+                "values": [
+                    {
+                        "id": "Protestant",
+                        "value": "Protestant"
+                    },
+                    {
+                        "id": "Catholic",
+                        "value": "Catholic"
+                    },
+                    {
+                        "id": "Mormon",
+                        "value": "Mormon"
+                    },
+                    {
+                        "id": "Unaffiliated",
+                        "value": "Unaffiliated"
+                    },
+                    {
+                        "id": "Atheist",
+                        "value": "Atheist"
+                    },
+                    {
+                        "id": "Agnostic",
+                        "value": "Agnostic"
+                    },
+                    {
+                        "id": "Jewish",
+                        "value": "Jewish"
+                    },
+                    {
+                        "id": "Muslim",
+                        "value": "Muslim"
+                    },
+                    {
+                        "id": "Hindu",
+                        "value": "Hindu"
+                    },
+                    {
+                        "id": "Buddhist",
+                        "value": "Buddhist"
+                    },
+                    {
+                        "id": "Christian",
+                        "value": "Christian"
+                    },
+                    {
+                        "id": "Baptist",
+                        "value": "Baptist"
+                    },
+                    {
+                        "id": "Jehovah Witness",
+                        "value": "Jehovah Witness"
+                    },
+                    {
+                        "id": "Seventh Day Adventist",
+                        "value": "Seventh Day Adventist"
+                    },
+                    {
+                        "id": "Scientologist",
+                        "value": "Scientologist"
+                    },
+                    {
+                        "id": "Lutheran",
+                        "value": "Lutheran"
+                    },
+                    {
+                        "id": "Other",
+                        "value": "Other"
+                    }
+                ],
+                "canUpdate": true,
+                "audit": true
+            },
+            {
+                "name": "maritalStatus",
+                "title": "Marital Status",
+                "type": "LIST",
+                "placeHolder": "Select Status",
+                "validationRegEx": "",
+                "required": false,
+                "disable": false,
+                "visible": false,
+                "multiSelect": false,
+                "values": [
+                    {
+                        "id": "Married",
+                        "value": "Married"
+                    },
+                    {
+                        "id": "Single",
+                        "value": "Single"
+                    },
+                    {
+                        "id": "Divorced",
+                        "value": "Divorced"
+                    },
+                    {
+                        "id": "Widow",
+                        "value": "Widow"
+                    },
+                    {
+                        "id": "Widower",
+                        "value": "Widower"
+                    }
+                ],
+                "canUpdate": true,
+                "audit": true
+            },
+            {
+                "name": "geoJSONLatLong",
+                "title": "Most Recent Address",
+                "type": "SUBSECTION",
+                "description": " ",
+                "marker": "start",
+                "visible": false,
+                "canUpdate": true
+            },
+            {
+                "name": "geoJSONLatLong",
+                "type": "LATLONG",
+                "icon": {
+                    "url": "https://nueassist-icon.s3.us-west-2.amazonaws.com/icons/resident.svg",
+                    "size": 30,
+                    "label": "notes",
+                    "labelOptions": {
+                        "color": "#138421",
+                        "fontSize": "18px"
+                    }
+                },
+                "showMap": true,
+                "validationRegEx": "",
+                "required": false,
+                "info": "Click on green location button",
+                "visible": false,
+                "displayOnCsv": true,
+                "visibleOnCard": true,
+                "fields": [
+                    {
+                        "name": "city",
+                        "title": "City",
+                        "type": "AUTOFILL",
+                        "autofillOptions": true,
+                        "reference_type": "locality",
+                        "placeHolder": "Enter City",
+                        "length": 100,
+                        "validationRegEx": "",
+                        "required": false,
+                        "info": "",
+                        "visible": false,
+                        "displayOnCsv": true,
+                        "visibleOnCard": true
+                    },
+                    {
+                        "name": "state",
+                        "title": "State",
+                        "type": "AUTOFILL",
+                        "autofillOptions": true,
+                        "reference_type": "administrative_area_level_1",
+                        "placeHolder": "Enter State",
+                        "length": 100,
+                        "validationRegEx": "",
+                        "required": false,
+                        "info": "",
+                        "visible": false,
+                        "displayOnCsv": true,
+                        "visibleOnCard": true
+                    },
+                    {
+                        "name": "country",
+                        "title": "Country",
+                        "type": "AUTOFILL",
+                        "autofillOptions": true,
+                        "reference_type": "country",
+                        "placeHolder": "Enter Country",
+                        "length": 100,
+                        "validationRegEx": "",
+                        "required": false,
+                        "info": "",
+                        "visible": false,
+                        "displayOnCsv": true,
+                        "visibleOnCard": true
+                    },
+                    {
+                        "name": "zip",
+                        "title": "zip Info",
+                        "placeHolder": "Enter zip",
+                        "type": "AUTOFILL",
+                        "autofillOptions": true,
+                        "reference_type": "postal_code",
+                        "length": 100,
+                        "validationRegEx": "",
+                        "required": false,
+                        "info": "zip",
+                        "visible": false,
+                        "displayOnCsv": true,
+                        "visibleOnCard": true
+                    }
+                ],
+                "canUpdate": true,
+                "audit": false
+            },
+            {
+                "name": "residenceType",
+                "title": "Residence Type",
+                "type": "LIST",
+                "placeHolder": "Select Residence Type",
+                "validationRegEx": "",
+                "required": false,
+                "visible": false,
+                "disable": false,
+                "defaultValue": "",
+                "multiSelect": false,
+                "values": [
+                    {
+                        "id": "An Apartment",
+                        "value": "An Apartment"
+                    },
+                    {
+                        "id": "A Mobile Home",
+                        "value": "A Mobile Home "
+                    },
+                    {
+                        "id": "Own Home",
+                        "value": "Own Home"
+                    },
+                    {
+                        "id": "A Group Residence",
+                        "value": "A Group Residence"
+                    },
+                    {
+                        "id": "A Relative's Home",
+                        "value": "A Relative's Home "
+                    },
+                    {
+                        "id": "An Assisted Living Residence",
+                        "value": "An Assisted Living Residence"
+                    },
+                    {
+                        "id": "A Nursing Home",
+                        "value": "A Nursing Home"
+                    }
+                ],
+                "canUpdate": true,
+                "audit": true
+            },
+            {
+                "name": "residentSsn",
+                "title": "SSN",
+                "type": "MASK",
+                "placeHolder": "Enter SSN",
+                "visible": false,
+                "disable": false,
+                "visibleOnCsv": true,
+                "displayOnCsv": true,
+                "displayOnReports": false,
+                "required": true,
+                "info": "Enter Id",
+                "canUpdate": true,
+                "validationRegEx": "",
+                "audit": true,
+                "mask": true,
+                "maskBy": "X",
+                "splitBy": "-",
+                "length": 5,
+                "position": "LEFT",
+                "pattern": [
+                    3,
+                    2,
+                    4
+                ]
+            },
+            {
+                "name": "caseInfo1",
+                "title": "Case Information",
+                "type": "SECTION",
+                "marker": "start",
+                "description": "Add Case Details if any (example:Case Manager Name, Contact Info, Agency etc)",
+                "visible": false,
+                "canUpdate": true
+            },
+            {
+                "name": "caseManagerFirstName",
+                "title": "Case Manager",
+                "type": "REFERENCE",
+                "info": "First Name/Last Name",
+                "validationRegEx": "",
+                "width": "550px",
+                "required": false,
+                "visible": false,
+                "placeHolder": "Contact Name",
+                "column": "",
+                "displayFields": [
+                    {
+                        "name": "firstName",
+                        "friendlyName": "First Name",
+                        "uiGridDisplay": true
+                    },
+                    {
+                        "name": "lastName",
+                        "friendlyName": "Last Name",
+                        "uiGridDisplay": true,
+                        "delimiter": ", "
+                    },
+                    {
+                        "name": "emailId",
+                        "friendlyName": "Email Id",
+                        "uiGridDisplay": true,
+                        "delimiter": ", "
+                    },
+                    {
+                        "name": "contactNumber",
+                        "friendlyName": "Phone Number",
+                        "uiGridDisplay": true,
+                        "uiDisplay": "phoneNumber",
+                        "delimiter": ", ",
+                        "type": "PHONENUMBER"
+                    }
+                ],
+                "delimiter": " ",
+                "displayOnCsv": true,
+                "canUpdate": true,
+                "appName": "NueAssist",
+                "audit": true,
+                "moduleName": "Community",
+                "entityName": "Contact"
+            },
+            {
+                "name": "description",
+                "title": "Additional Info",
+                "type": "TEXTAREA",
+                "rows": "4",
+                "widthRatio": "3",
+                "placeHolder": "Enter Additional Info",
+                "info": "Enter Additional Info",
+                "validationRegEx": "",
+                "visible": false,
+                "required": false,
+                "audit": true,
+                "canUpdate": true
+            },
+            {
+                "name": "caseInfo1",
+                "title": "Case Information",
+                "type": "SECTION",
+                "marker": "end",
+                "visible": false,
+                "canUpdate": true
+            },
+            {
+                "name": "insuranceInformation",
+                "title": "Insurance",
+                "type": "SECTION",
+                "marker": "start",
+                "visible": false,
+                "canUpdate": true
+            },
+            {
+                "name": "medicareAndMedicaidInfo",
+                "title": "Medicare & Medicaid",
+                "type": "SUBSECTION",
+                "marker": "start",
+                "visible": false,
+                "canUpdate": true
+            },
+            {
+                "name": "medicare",
+                "title": "Medicare",
+                "type": "TEXTBOX",
+                "placeHolder": "Enter Medicare Number",
+                "info": "Enter Medicare Number",
+                "required": false,
+                "visible": false,
+                "visibleOnCsv": true,
+                "displayOnCsv": true,
+                "canUpdate": true,
+                "audit": true
+            },
+            {
+                "name": "primaryHealthInsurance",
+                "title": "Primary Health Insurance",
+                "type": "SUBSECTION",
+                "marker": "start",
+                "visible": false,
+                "canUpdate": true
+            },
+            {
+                "name": "primaryPayerId",
+                "title": "Payer Id",
+                "type": "TEXTBOX",
+                "placeHolder": "Enter Payer Name",
+                "info": "Enter Payer Name",
+                "required": false,
+                "visible": false,
+                "visibleOnCsv": true,
+                "displayOnCsv": true,
+                "canUpdate": true,
+                "audit": true
+            },
+            {
+                "name": "primaryPolicy",
+                "title": "Policy",
+                "type": "TEXTBOX",
+                "placeHolder": "Enter Policy Number",
+                "info": "Enter Policy Number",
+                "required": false,
+                "visible": false,
+                "visibleOnCsv": true,
+                "displayOnCsv": true,
+                "canUpdate": true,
+                "audit": true
+            },
+            {
+                "name": "primaryGroupNumber",
+                "title": "Group Number",
+                "type": "TEXTBOX",
+                "placeHolder": "Enter Group Number",
+                "info": "Enter Group Number",
+                "required": false,
+                "visible": false,
+                "visibleOnCsv": true,
+                "displayOnCsv": true,
+                "canUpdate": true,
+                "audit": true
+            },
+            {
+                "name": "primaryMember",
+                "title": "Member",
+                "type": "TEXTBOX",
+                "placeHolder": "Enter Member",
+                "info": "Enter Member",
+                "required": false,
+                "visible": false,
+                "visibleOnCsv": true,
+                "displayOnCsv": true,
+                "canUpdate": true,
+                "audit": true
+            },
+            {
+                "name": "primaryCustomerServicePhone",
+                "title": "Customer Service Phone Number",
+                "type": "PHONENUMBER",
+                "placeHolder": "Enter Customer Service Phone Number",
+                "info": "Enter Customer Service Phone Number",
+                "visible": false,
+                "required": false,
+                "canUpdate": true,
+                "audit": true
+            },
+            {
+                "name": "pCPPharmacy",
+                "title": "Healthcare Providers",
+                "type": "SECTION",
+                "marker": "start",
+                "canUpdate": true
+            },
+            {
+                "name": "primaryCarePhysician",
+                "title": "Primary Care Physician",
+                "type": "SUBSECTION",
+                "marker": "start",
+                "canUpdate": true
+            },
+            {
+                "name": "primaryPhysicianFirstName",
+                "title": "First Name",
+                "type": "TEXTBOX",
+                "placeHolder": "Enter First Name",
+                "validationRegEx": "",
+                "visible": false,
+                "required": false,
+                "displayOnCsv": true,
+                "audit": true,
+                "canUpdate": true
+            },
+            {
+                "name": "primaryPhysicianLastName",
+                "title": "Last Name",
+                "type": "TEXTBOX",
+                "placeHolder": "Enter Last Name",
+                "validationRegEx": "",
+                "visible": false,
+                "required": false,
+                "displayOnCsv": true,
+                "audit": true,
+                "canUpdate": true
+            },
+            {
+                "name": "primaryPhysicianEmailId",
+                "title": "Email Id",
+                "type": "EMAIL",
+                "placeHolder": "Enter Email Id",
+                "validationRegEx": "",
+                "visible": false,
+                "required": false,
+                "displayOnCsv": true,
+                "audit": true,
+                "canUpdate": true
+            },
+            {
+                "name": "primaryPhysicianContactNumber",
+                "title": "Contact Number",
+                "type": "PHONENUMBER",
+                "placeHolder": "Enter Contact Number",
+                "validationRegEx": "",
+                "visible": false,
+                "required": false,
+                "displayOnCsv": true,
+                "audit": true,
+                "canUpdate": true
+            },
+            {
+                "name": "practiceName",
+                "title": "Practice Name",
+                "type": "TEXTBOX",
+                "placeHolder": "Enter Practice Name",
+                "validationRegEx": "",
+                "visible": false,
+                "required": false,
+                "displayOnCsv": true,
+                "audit": true,
+                "canUpdate": true
+            },
+            {
+                "name": "primaryCarePhysicianAddress",
+                "title": "Address",
+                "type": "LATLONG",
+                "icon": {
+                    "url": "",
+                    "size": 30,
+                    "label": "notes",
+                    "labelOptions": {
+                        "color": "#138421",
+                        "fontSize": "18px"
+                    }
+                },
+                "showMap": true,
+                "validationRegEx": "",
+                "required": false,
+                "info": "Click on green location button",
+                "visible": false,
+                "displayOnCsv": true,
+                "visibleOnCard": true,
+                "fields": [
+                    {
+                        "name": "city",
+                        "title": "City",
+                        "type": "AUTOFILL",
+                        "autofillOptions": true,
+                        "reference_type": "locality",
+                        "placeHolder": "Enter City",
+                        "length": 100,
+                        "validationRegEx": "",
+                        "required": false,
+                        "info": "",
+                        "visible": false,
+                        "displayOnCsv": true,
+                        "visibleOnCard": true
+                    },
+                    {
+                        "name": "appartmentNumber",
+                        "title": "Apartment Number",
+                        "type": "TEXTBOX",
+                        "placeHolder": "Enter Apartment Number",
+                        "validationRegEx": "",
+                        "visible": false,
+                        "required": false,
+                        "displayOnCsv": true,
+                        "audit": true,
+                        "canUpdate": true
+                    },
+                    {
+                        "name": "state",
+                        "title": "State",
+                        "type": "AUTOFILL",
+                        "autofillOptions": true,
+                        "reference_type": "administrative_area_level_1",
+                        "placeHolder": "Enter State",
+                        "length": 100,
+                        "validationRegEx": "",
+                        "required": false,
+                        "info": "",
+                        "visible": true,
+                        "displayOnCsv": true,
+                        "visibleOnCard": true
+                    },
+                    {
+                        "name": "country",
+                        "title": "Country",
+                        "type": "AUTOFILL",
+                        "autofillOptions": true,
+                        "reference_type": "country",
+                        "placeHolder": "Enter Country",
+                        "length": 100,
+                        "validationRegEx": "",
+                        "required": false,
+                        "info": "",
+                        "visible": true,
+                        "displayOnCsv": true,
+                        "visibleOnCard": true
+                    },
+                    {
+                        "name": "zip",
+                        "title": "zip Info",
+                        "placeHolder": "Enter zip",
+                        "type": "AUTOFILL",
+                        "autofillOptions": true,
+                        "reference_type": "postal_code",
+                        "length": 100,
+                        "validationRegEx": "",
+                        "required": false,
+                        "info": "zip",
+                        "visible": false,
+                        "displayOnCsv": true,
+                        "visibleOnCard": true
+                    }
+                ],
+                "canUpdate": true,
+                "audit": false
+            },
+          
+            
+            {
+                "name": "hospitalName",
+                "title": "Hospital Name",
+                "type": "TEXTBOX",
+                "placeHolder": "Enter Hospital Name",
+                "validationRegEx": "",
+                "visible": false,
+                "required": false,
+                "displayOnCsv": true,
+                "audit": true,
+                "canUpdate": true
+            },
+            {
+                "name": "hospitalContactNumber",
+                "title": "Phone Number",
+                "type": "PHONENUMBER",
+                "placeHolder": "Enter Phone Number",
+                "validationRegEx": "",
+                "visible": false,
+                "required": false,
+                "displayOnCsv": true,
+                "audit": true,
+                "canUpdate": true
+            },
+            {
+                "name": "preferredAddress",
+                "title": "Address",
+                "type": "LATLONG",
+                "icon": {
+                    "url": "",
+                    "size": 30,
+                    "label": "notes",
+                    "labelOptions": {
+                        "color": "#138421",
+                        "fontSize": "18px"
+                    }
+                },
+                "showMap": true,
+                "validationRegEx": "",
+                "required": false,
+                "info": "Click on green location button",
+                "visible": false,
+                "displayOnCsv": true,
+                "visibleOnCard": true,
+                "fields": [
+                    {
+                        "name": "city",
+                        "title": "City",
+                        "type": "AUTOFILL",
+                        "autofillOptions": true,
+                        "reference_type": "locality",
+                        "placeHolder": "Enter City",
+                        "length": 100,
+                        "validationRegEx": "",
+                        "required": false,
+                        "info": "",
+                        "visible": false,
+                        "displayOnCsv": true,
+                        "visibleOnCard": true
+                    },
+                    {
+                        "name": "appartmentNumber",
+                        "title": "Apartment Number",
+                        "type": "TEXTBOX",
+                        "placeHolder": "Enter Apartment Number",
+                        "validationRegEx": "",
+                        "visible": false,
+                        "required": false,
+                        "displayOnCsv": true,
+                        "audit": true,
+                        "canUpdate": true
+                    },
+                    {
+                        "name": "state",
+                        "title": "State",
+                        "type": "AUTOFILL",
+                        "autofillOptions": true,
+                        "reference_type": "administrative_area_level_1",
+                        "placeHolder": "Enter State",
+                        "length": 100,
+                        "validationRegEx": "",
+                        "required": false,
+                        "info": "",
+                        "visible": true,
+                        "displayOnCsv": true,
+                        "visibleOnCard": true
+                    },
+                    {
+                        "name": "country",
+                        "title": "Country",
+                        "type": "AUTOFILL",
+                        "autofillOptions": true,
+                        "reference_type": "country",
+                        "placeHolder": "Enter Country",
+                        "length": 100,
+                        "validationRegEx": "",
+                        "required": false,
+                        "info": "",
+                        "visible": true,
+                        "displayOnCsv": true,
+                        "visibleOnCard": true
+                    },
+                    {
+                        "name": "zip",
+                        "title": "zip Info",
+                        "placeHolder": "Enter zip",
+                        "type": "AUTOFILL",
+                        "autofillOptions": true,
+                        "reference_type": "postal_code",
+                        "length": 100,
+                        "validationRegEx": "",
+                        "required": false,
+                        "info": "zip",
+                        "visible": false,
+                        "displayOnCsv": true,
+                        "visibleOnCard": true
+                    }
+                ],
+                "canUpdate": true,
+                "audit": false
+            },
+            {
+                "name": "additionalPCP",
+                "title": "Additional PCP,Pharmacy & Hospital Info",
+                "type": "TEXTAREA",
+                "rows": "4",
+                "widthRatio": "3",
+                "placeHolder": "Enter Other Additional Info",
+                "visible": false,
+                "validationRegEx": "",
+                "disable": false,
+                "displayOnCsv": true,
+                "required": false,
+                "info": "Enter The Other Additional Info",
+                "canUpdate": true,
+                "audit": true
+            },
+            {
+                "name": "Document",
+                "title": "Document",
+                "nameTitle": "documentName",
+                "descriptionTitle": "description",
+                "type": "DOCUMENT",
+                "placeHolder": "Upload  Documents",
+                "validationRegEx": "",
+                "required": false,
+                "info": "Upload Documents",
+                "visible": false,
+                "displayOnCsv": true,
+                "visibleOnCard": true,
+                "File_Limits": 3072,
+                "audit": true,
+                "canUpdate": true
+            },
+            {
+                "name": "pCPPharmacy",
+                "title": "Healthcare Providers",
+                "type": "SECTION",
+                "marker": "end",
+                "canUpdate": true
+            },
+            {
+                "name": "medicalPOA",
+                "title": "POA/Emergency contacts",
+                "type": "SECTION",
+                "marker": "start",
+                "canUpdate": true
+            },
+            {
+                "name": "medicalPOA1",
+                "title": "Medical POA",
+                "type": "SUBSECTION",
+                "description": "( Add contact info of legally designated individual authorized to make health care decisions on behalf of the resident)"
+            },
+            {
+                "name": "medicalPOATitle",
+                "title": "Title",
+                "type": "LIST",
+                "placeHolder": "Select Tilte",
+                "validationRegEx": "",
+                "required": false,
+                "visible": false,
+                "disable": false,
+                "defaultValue": "",
+                "multiSelect": false,
+                "values": [
+                    {
+                        "id": "Mr",
+                        "value": "Mr"
+                    },
+                    {
+                        "id": "Mrs",
+                        "value": "Mrs"
+                    },
+                    {
+                        "id": "Miss",
+                        "value": "Miss"
+                    },
+                    {
+                        "id": "Ms",
+                        "value": "Ms"
+                    },
+                    {
+                        "id": "Mx",
+                        "value": "Mx"
+                    },
+                    {
+                        "id": "Sir",
+                        "value": "Sir"
+                    },
+                    {
+                        "id": "Dr",
+                        "value": "Dr"
+                    },
+                    {
+                        "id": "NP",
+                        "value": "NP"
+                    }
+                ],
+                "canUpdate": true,
+                "audit": true
+            },
+            {
+                "name": "medicalPOAFirstName",
+                "title": "First Name",
+                "type": "TEXTBOX",
+                "placeHolder": "Enter POA First Name",
+                "validationRegEx": "",
+                "visible": false,
+                "required": false,
+                "displayOnCsv": true,
+                "audit": true,
+                "canUpdate": true
+            },
+            {
+                "name": "medicalPOALastName",
+                "title": "Last Name",
+                "type": "TEXTBOX",
+                "placeHolder": "Enter POA Last Name",
+                "validationRegEx": "",
+                "visible": false,
+                "required": false,
+                "displayOnCsv": true,
+                "audit": true,
+                "canUpdate": true
+            },
+            {
+                "name": "medicalPOAEmailId",
+                "title": "Email Id",
+                "type": "EMAIL",
+                "placeHolder": "Enter POA Email Id",
+                "validationRegEx": "",
+                "visible": false,
+                "required": false,
+                "displayOnCsv": true,
+                "audit": true,
+                "canUpdate": true
+            },
+            {
+                "name": "medicalPOAContactNumber",
+                "title": "Contact Number",
+                "type": "PHONENUMBER",
+                "placeHolder": "Enter Contact Number",
+                "validationRegEx": "",
+                "visible": false,
+                "required": false,
+                "displayOnCsv": true,
+                "audit": true,
+                "canUpdate": true
+            },
+            {
+                "name": "medicalPOARelationToLead",
+                "title": "POA Relation To Resident",
+                "type": "LIST",
+                "placeHolder": "Select Relationship",
+                "validationRegEx": "",
+                "required": false,
+                "disable": false,
+                "multiSelect": false,
+                "values": [
+                    {
+                        "id": "Spouse",
+                        "value": "Spouse"
+                    },
+                    {
+                        "id": "Son",
+                        "value": "Son"
+                    },
+                    {
+                        "id": "Daughter",
+                        "value": "Daughter"
+                    },
+                    {
+                        "id": "Father",
+                        "value": "Father"
+                    },
+                    {
+                        "id": "Mother",
+                        "value": "Mother"
+                    },
+                    {
+                        "id": "Friend",
+                        "value": "Friend"
+                    },
+                    {
+                        "id": "Niece",
+                        "value": "Niece"
+                    },
+                    {
+                        "id": "Nephew",
+                        "value": "Nephew"
+                    },
+                    {
+                        "id": "Grandmother",
+                        "value": "Grandmother"
+                    },
+                    {
+                        "id": "Grandfather",
+                        "value": "Grandfather"
+                    },
+                    {
+                        "id": "Aunty",
+                        "value": "Aunty"
+                    },
+                    {
+                        "id": "Uncle",
+                        "value": "Uncle"
+                    },
+                    {
+                        "id": "Cousin",
+                        "value": "Cousin"
+                    },
+                    {
+                        "id": "Sister",
+                        "value": "Sister"
+                    },
+                    {
+                        "id": "Brother",
+                        "value": "Brother"
+                    },
+                    {
+                        "id": "Other",
+                        "value": "Other"
+                    }
+                ],
+                "canUpdate": true,
+                "audit": true
+            },
+            {
+                "name": "medicalPOAAddress",
+                "title": "Address",
+                "type": "LATLONG",
+                "icon": {
+                    "url": "",
+                    "size": 30,
+                    "label": "notes",
+                    "labelOptions": {
+                        "color": "#138421",
+                        "fontSize": "18px"
+                    }
+                },
+                "showMap": true,
+                "validationRegEx": "",
+                "required": false,
+                "info": "Click on green location button",
+                "visible": false,
+                "displayOnCsv": true,
+                "visibleOnCard": true,
+                "fields": [
+                    {
+                        "name": "city",
+                        "title": "City",
+                        "type": "AUTOFILL",
+                        "autofillOptions": true,
+                        "reference_type": "locality",
+                        "placeHolder": "Enter City",
+                        "length": 100,
+                        "validationRegEx": "",
+                        "required": false,
+                        "info": "",
+                        "visible": false,
+                        "displayOnCsv": true,
+                        "visibleOnCard": true
+                    },
+                    {
+                        "name": "appartmentNumber",
+                        "title": "Apartment Number",
+                        "type": "TEXTBOX",
+                        "placeHolder": "Enter Apartment Number",
+                        "validationRegEx": "",
+                        "visible": false,
+                        "required": false,
+                        "displayOnCsv": true,
+                        "audit": true,
+                        "canUpdate": true
+                    },
+                    {
+                        "name": "state",
+                        "title": "State",
+                        "type": "AUTOFILL",
+                        "autofillOptions": true,
+                        "reference_type": "administrative_area_level_1",
+                        "placeHolder": "Enter State",
+                        "length": 100,
+                        "validationRegEx": "",
+                        "required": false,
+                        "info": "",
+                        "visible": true,
+                        "displayOnCsv": true,
+                        "visibleOnCard": true
+                    },
+                    {
+                        "name": "country",
+                        "title": "Country",
+                        "type": "AUTOFILL",
+                        "autofillOptions": true,
+                        "reference_type": "country",
+                        "placeHolder": "Enter Country",
+                        "length": 100,
+                        "validationRegEx": "",
+                        "required": false,
+                        "info": "",
+                        "visible": true,
+                        "displayOnCsv": true,
+                        "visibleOnCard": true
+                    },
+                    {
+                        "name": "zip",
+                        "title": "zip Info",
+                        "placeHolder": "Enter zip",
+                        "type": "AUTOFILL",
+                        "autofillOptions": true,
+                        "reference_type": "postal_code",
+                        "length": 100,
+                        "validationRegEx": "",
+                        "required": false,
+                        "info": "zip",
+                        "visible": false,
+                        "displayOnCsv": true,
+                        "visibleOnCard": true
+                    }
+                ],
+                "canUpdate": true,
+                "audit": false
+            },
+            {
+                "name": "medicalNotes",
+                "title": "",
+                "type": "SUBSECTION",
+                "marker": "start",
+                "visible": false,
+                "canUpdate": true
+            },
+            {
+                "name": "medicalPOANotes",
+                "title": "Notes",
+                "type": "TEXTAREA",
+                "rows": "4",
+                "widthRatio": "3",
+                "placeHolder": "Enter Notes Here",
+                "info": "Notes",
+                "validationRegEx": "",
+                "visible": false,
+                "required": false,
+                "audit": true,
+                "canUpdate": true
+            },
+            {
+                "name": "financialPOA",
+                "title": "Financial POA",
+                "type": "SUBSECTION",
+                "description": "(Add contact info of legally designated individual authorized to make financial decisions on behalf of the resident)",
+                "sameAs": {
+                    "name": "sameAsFinancialPOA",
+                    "options": [
+                        {
+                            "id": 1,
+                            "value": "Same as  Medical POA",
+                            "visible": true,
+                            "mapping_rules": [
+                                {
+                                    "setTo": "financialPOAEmailId",
+                                    "setFrom": "medicalPOAEmailId"
+                                },
+                                {
+                                    "setTo": "financialPOAContactNumber",
+                                    "setFrom": "medicalPOAContactNumber"
+                                },
+                                {
+                                    "setTo": "financialPOAFirstName",
+                                    "setFrom": "medicalPOAFirstName"
+                                },
+                                {
+                                    "setTo": "financialPOALastName",
+                                    "setFrom": "medicalPOALastName"
+                                },
+                                {
+                                    "setTo": "financialPOARelationToLead",
+                                    "setFrom": "medicalPOARelationToLead"
+                                },
+                                {
+                                    "setTo": "financialPOATitle",
+                                    "setFrom": "medicalPOATitle"
+                                },
+                                {
+                                    "setTo": "financialPOAAddress",
+                                    "setFrom": "medicalPOAAddress"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            },
+            {
+                "name": "financialPOATitle",
+                "title": "Title",
+                "type": "LIST",
+                "placeHolder": "Select Tilte",
+                "validationRegEx": "",
+                "required": false,
+                "visible": false,
+                "colSpan": 5,
+                "disable": false,
+                "defaultValue": "",
+                "multiSelect": false,
+                "values": [
+                    {
+                        "id": "Mr",
+                        "value": "Mr"
+                    },
+                    {
+                        "id": "Mrs",
+                        "value": "Mrs"
+                    },
+                    {
+                        "id": "Miss",
+                        "value": "Miss"
+                    },
+                    {
+                        "id": "Ms",
+                        "value": "Ms"
+                    },
+                    {
+                        "id": "Mx",
+                        "value": "Mx"
+                    },
+                    {
+                        "id": "Sir",
+                        "value": "Sir"
+                    },
+                    {
+                        "id": "Dr",
+                        "value": "Dr"
+                    },
+                    {
+                        "id": "NP",
+                        "value": "NP"
+                    }
+                ],
+                "canUpdate": true,
+                "audit": true
+            },
+            {
+                "name": "financialPOAFirstName",
+                "title": "First Name",
+                "type": "TEXTBOX",
+                "placeHolder": "Enter POA First Name",
+                "validationRegEx": "",
+                "visible": false,
+                "required": false,
+                "colSpan": 5,
+                "labelSuffix": "type_name",
+                "displayOnCsv": true,
+                "audit": true,
+                "canUpdate": true
+            },
+            {
+                "name": "financialPOALastName",
+                "title": "Last Name",
+                "type": "TEXTBOX",
+                "placeHolder": "Enter POA Last Name",
+                "validationRegEx": "",
+                "visible": false,
+                "colSpan": 5,
+                "required": false,
+                "displayOnCsv": true,
+                "audit": true,
+                "canUpdate": true
+            },
+            {
+                "name": "financialPOAEmailId",
+                "title": "Email Id",
+                "type": "EMAIL",
+                "placeHolder": "Enter POA Email Id",
+                "validationRegEx": "",
+                "visible": false,
+                "colSpan": 5,
+                "required": false,
+                "displayOnCsv": true,
+                "audit": true,
+                "canUpdate": true
+            },
+            {
+                "name": "financialPOAContactNumber",
+                "title": "Contact Number",
+                "type": "PHONENUMBER",
+                "placeHolder": "Enter Contact Number",
+                "validationRegEx": "",
+                "visible": false,
+                "colSpan": 5,
+                "required": false,
+                "displayOnCsv": true,
+                "audit": true,
+                "canUpdate": true
+            },
+            {
+                "name": "financialPOARelationToLead",
+                "title": "POA Relation To Resident",
+                "type": "LIST",
+                "placeHolder": "Select Relationship",
+                "validationRegEx": "",
+                "required": false,
+                "disable": false,
+                "colSpan": 5,
+                "multiSelect": false,
+                "values": [
+                    {
+                        "id": "Spouse",
+                        "value": "Spouse"
+                    },
+                    {
+                        "id": "Son",
+                        "value": "Son"
+                    },
+                    {
+                        "id": "Daughter",
+                        "value": "Daughter"
+                    },
+                    {
+                        "id": "Father",
+                        "value": "Father"
+                    },
+                    {
+                        "id": "Mother",
+                        "value": "Mother"
+                    },
+                    {
+                        "id": "Friend",
+                        "value": "Friend"
+                    },
+                    {
+                        "id": "Niece",
+                        "value": "Niece"
+                    },
+                    {
+                        "id": "Nephew",
+                        "value": "Nephew"
+                    },
+                    {
+                        "id": "Grandmother",
+                        "value": "Grandmother"
+                    },
+                    {
+                        "id": "Grandfather",
+                        "value": "Grandfather"
+                    },
+                    {
+                        "id": "Aunty",
+                        "value": "Aunty"
+                    },
+                    {
+                        "id": "Uncle",
+                        "value": "Uncle"
+                    },
+                    {
+                        "id": "Cousin",
+                        "value": "Cousin"
+                    },
+                    {
+                        "id": "Sister",
+                        "value": "Sister"
+                    },
+                    {
+                        "id": "Brother",
+                        "value": "Brother"
+                    },
+                    {
+                        "id": "Other",
+                        "value": "Other"
+                    }
+                ],
+                "canUpdate": true,
+                "audit": true
+            },
+            {
+                "name": "financialPOAAddress",
+                "title": "Address",
+                "type": "LATLONG",
+                "icon": {
+                    "url": "",
+                    "size": 30,
+                    "label": "notes",
+                    "labelOptions": {
+                        "color": "#138421",
+                        "fontSize": "18px"
+                    }
+                },
+                "showMap": true,
+                "validationRegEx": "",
+                "required": false,
+                "info": "Click on green location button",
+                "visible": false,
+                "displayOnCsv": true,
+                "visibleOnCard": true,
+                "fields": [
+                    {
+                        "name": "city",
+                        "title": "City",
+                        "type": "AUTOFILL",
+                        "autofillOptions": true,
+                        "reference_type": "locality",
+                        "placeHolder": "Enter City",
+                        "length": 100,
+                        "validationRegEx": "",
+                        "required": false,
+                        "info": "",
+                        "visible": false,
+                        "displayOnCsv": true,
+                        "visibleOnCard": true
+                    },
+                    {
+                        "name": "appartmentNumber",
+                        "title": "Apartment Number",
+                        "type": "TEXTBOX",
+                        "placeHolder": "Enter Apartment Number",
+                        "validationRegEx": "",
+                        "visible": false,
+                        "required": false,
+                        "displayOnCsv": true,
+                        "audit": true,
+                        "canUpdate": true
+                    },
+                    {
+                        "name": "state",
+                        "title": "State",
+                        "type": "AUTOFILL",
+                        "autofillOptions": true,
+                        "reference_type": "administrative_area_level_1",
+                        "placeHolder": "Enter State",
+                        "length": 100,
+                        "validationRegEx": "",
+                        "required": false,
+                        "info": "",
+                        "visible": true,
+                        "displayOnCsv": true,
+                        "visibleOnCard": true
+                    },
+                    {
+                        "name": "country",
+                        "title": "Country",
+                        "type": "AUTOFILL",
+                        "autofillOptions": true,
+                        "reference_type": "country",
+                        "placeHolder": "Enter Country",
+                        "length": 100,
+                        "validationRegEx": "",
+                        "required": false,
+                        "info": "",
+                        "visible": true,
+                        "displayOnCsv": true,
+                        "visibleOnCard": true
+                    },
+                    {
+                        "name": "zip",
+                        "title": "zip Info",
+                        "placeHolder": "Enter zip",
+                        "type": "AUTOFILL",
+                        "autofillOptions": true,
+                        "reference_type": "postal_code",
+                        "length": 100,
+                        "validationRegEx": "",
+                        "required": false,
+                        "info": "zip",
+                        "visible": false,
+                        "displayOnCsv": true,
+                        "visibleOnCard": true
+                    }
+                ],
+                "canUpdate": true,
+                "audit": false
+            },
+            {
+                "name": "",
+                "title": "",
+                "type": "SUBSECTION",
+                "canUpdate": true
+            },
+            {
+                "name": "financialPOANotes",
+                "title": "Notes",
+                "type": "TEXTAREA",
+                "rows": "4",
+                "widthRatio": "3",
+                "placeHolder": "Enter Notes Here",
+                "validationRegEx": "",
+                "visible": false,
+                "required": false,
+                "displayOnCsv": true,
+                "audit": true,
+                "canUpdate": true
+            },
+            {
+                "name": "emergencyContact1",
+                "title": "Emergency Contact 1",
+                "type": "SUBSECTION",
+                "sameAs": {
+                    "options": [
+                        {
+                            "id": 1,
+                            "value": "Same as  Medical POA",
+                            "visible": true,
+                            "errorMessage": "Please fill  Medical POA to clone",
+                            "mapping_rules": [
+                                {
+                                    "setTo": "emergencyContactEmailId1",
+                                    "setFrom": "medicalPOAEmailId"
+                                },
+                                {
+                                    "setTo": "emergencyContactContactNumber1",
+                                    "setFrom": "medicalPOAContactNumber"
+                                },
+                                {
+                                    "setTo": "emergencyContactFirstName1",
+                                    "setFrom": "medicalPOAFirstName"
+                                },
+                                {
+                                    "setTo": "emergencyContactLastName1",
+                                    "setFrom": "medicalPOALastName"
+                                },
+                                {
+                                    "setTo": "emergencyContactRelationToLead1",
+                                    "setFrom": "medicalPOARelationToLead"
+                                },
+                                {
+                                    "setTo": "emergencyContactAddress",
+                                    "setFrom": "medicalPOAAddress"
+                                }
+                            ]
+                        },
+                        {
+                            "id": 2,
+                            "value": "Same as  Finincial POA",
+                            "visible": true,
+                            "errorMessage": "Please fill  Finincial POA to clone",
+                            "mapping_rules": [
+                                {
+                                    "setTo": "emergencyContactEmailId1",
+                                    "setFrom": "financialPOAEmailId"
+                                },
+                                {
+                                    "setTo": "emergencyContactContactNumber1",
+                                    "setFrom": "financialPOAContactNumber"
+                                },
+                                {
+                                    "setTo": "emergencyContactFirstName1",
+                                    "setFrom": "financialPOAFirstName"
+                                },
+                                {
+                                    "setTo": "emergencyContactLastName1",
+                                    "setFrom": "financialPOALastName"
+                                },
+                                {
+                                    "setTo": "emergencyContactRelationToLead1",
+                                    "setFrom": "financialPOARelationToLead"
+                                },
+                                {
+                                    "setTo": "emergencyContactAddress",
+                                    "setFrom": "financialPOAAddress"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            },
+            {
+                "name": "emergencyContactFirstName1",
+                "title": "First Name",
+                "type": "TEXTBOX",
+                "placeHolder": "Enter First Name",
+                "validationRegEx": "",
+                "visible": false,
+                "required": false,
+                "labelSuffix": "type_name",
+                "displayOnCsv": true,
+                "audit": true,
+                "canUpdate": true
+            },
+            {
+                "name": "emergencyContactLastName1",
+                "title": "Last Name",
+                "type": "TEXTBOX",
+                "placeHolder": "Enter Last Name",
+                "validationRegEx": "",
+                "visible": false,
+                "required": false,
+                "displayOnCsv": true,
+                "audit": true,
+                "canUpdate": true
+            },
+            {
+                "name": "emergencyContactEmailId1",
+                "title": "Email Id",
+                "type": "EMAIL",
+                "placeHolder": "Enter Email Id",
+                "validationRegEx": "",
+                "visible": false,
+                "required": false,
+                "displayOnCsv": true,
+                "audit": true,
+                "canUpdate": true
+            },
+            {
+                "name": "emergencyContactContactNumber1",
+                "title": "Contact Number",
+                "type": "PHONENUMBER",
+                "placeHolder": "Enter Contact Number",
+                "validationRegEx": "",
+                "visible": false,
+                "required": false,
+                "displayOnCsv": true,
+                "audit": true,
+                "canUpdate": true
+            },
+            {
+                "name": "emergencyContactRelationToLead1",
+                "title": "Relation To Resident",
+                "type": "LIST",
+                "placeHolder": "Select Relationship",
+                "validationRegEx": "",
+                "required": false,
+                "disable": false,
+                "multiSelect": false,
+                "values": [
+                    {
+                        "id": "Spouse",
+                        "value": "Spouse"
+                    },
+                    {
+                        "id": "Son",
+                        "value": "Son"
+                    },
+                    {
+                        "id": "Daughter",
+                        "value": "Daughter"
+                    },
+                    {
+                        "id": "Father",
+                        "value": "Father"
+                    },
+                    {
+                        "id": "Mother",
+                        "value": "Mother"
+                    },
+                    {
+                        "id": "Friend",
+                        "value": "Friend"
+                    },
+                    {
+                        "id": "Niece",
+                        "value": "Niece"
+                    },
+                    {
+                        "id": "Nephew",
+                        "value": "Nephew"
+                    },
+                    {
+                        "id": "Grandmother",
+                        "value": "Grandmother"
+                    },
+                    {
+                        "id": "Grandfather",
+                        "value": "Grandfather"
+                    },
+                    {
+                        "id": "Aunty",
+                        "value": "Aunty"
+                    },
+                    {
+                        "id": "Uncle",
+                        "value": "Uncle"
+                    },
+                    {
+                        "id": "Cousin",
+                        "value": "Cousin"
+                    },
+                    {
+                        "id": "Sister",
+                        "value": "Sister"
+                    },
+                    {
+                        "id": "Brother",
+                        "value": "Brother"
+                    },
+                    {
+                        "id": "Other",
+                        "value": "Other"
+                    }
+                ],
+                "canUpdate": true,
+                "audit": true
+            },
+            {
+                "name": "emergencyContactAddress",
+                "title": "Address",
+                "type": "LATLONG",
+                "icon": {
+                    "url": "",
+                    "size": 30,
+                    "label": "notes",
+                    "labelOptions": {
+                        "color": "#138421",
+                        "fontSize": "18px"
+                    }
+                },
+                "showMap": true,
+                "validationRegEx": "",
+                "required": false,
+                "info": "Click on green location button",
+                "visible": false,
+                "displayOnCsv": true,
+                "visibleOnCard": true,
+                "fields": [
+                    {
+                        "name": "city",
+                        "title": "City",
+                        "type": "AUTOFILL",
+                        "autofillOptions": true,
+                        "reference_type": "locality",
+                        "placeHolder": "Enter City",
+                        "length": 100,
+                        "validationRegEx": "",
+                        "required": false,
+                        "info": "",
+                        "visible": false,
+                        "displayOnCsv": true,
+                        "visibleOnCard": true
+                    },
+                    {
+                        "name": "appartmentNumber",
+                        "title": "Apartment Number",
+                        "type": "TEXTBOX",
+                        "placeHolder": "Enter Apartment Number",
+                        "validationRegEx": "",
+                        "visible": false,
+                        "required": false,
+                        "displayOnCsv": true,
+                        "audit": true,
+                        "canUpdate": true
+                    },
+                    {
+                        "name": "state",
+                        "title": "State",
+                        "type": "AUTOFILL",
+                        "autofillOptions": true,
+                        "reference_type": "administrative_area_level_1",
+                        "placeHolder": "Enter State",
+                        "length": 100,
+                        "validationRegEx": "",
+                        "required": false,
+                        "info": "",
+                        "visible": true,
+                        "displayOnCsv": true,
+                        "visibleOnCard": true
+                    },
+                    {
+                        "name": "country",
+                        "title": "Country",
+                        "type": "AUTOFILL",
+                        "autofillOptions": true,
+                        "reference_type": "country",
+                        "placeHolder": "Enter Country",
+                        "length": 100,
+                        "validationRegEx": "",
+                        "required": false,
+                        "info": "",
+                        "visible": true,
+                        "displayOnCsv": true,
+                        "visibleOnCard": true
+                    },
+                    {
+                        "name": "zip",
+                        "title": "zip Info",
+                        "placeHolder": "Enter zip",
+                        "type": "AUTOFILL",
+                        "autofillOptions": true,
+                        "reference_type": "postal_code",
+                        "length": 100,
+                        "validationRegEx": "",
+                        "required": false,
+                        "info": "zip",
+                        "visible": false,
+                        "displayOnCsv": true,
+                        "visibleOnCard": true
+                    }
+                ],
+                "canUpdate": true,
+                "audit": false
+            },
+            {
+                "name": "emergencyContact2",
+                "title": "Emergency Contact 2",
+                "type": "SUBSECTION"
+            },
+            {
+                "name": "emergencyContactFirstName2",
+                "title": "First Name",
+                "type": "TEXTBOX",
+                "placeHolder": "Enter First Name",
+                "validationRegEx": "",
+                "visible": false,
+                "required": false,
+                "labelSuffix": "type_name",
+                "displayOnCsv": true,
+                "audit": true,
+                "canUpdate": true
+            },
+            {
+                "name": "emergencyContactLastName2",
+                "title": "Last Name",
+                "type": "TEXTBOX",
+                "placeHolder": "Enter Last Name",
+                "validationRegEx": "",
+                "visible": false,
+                "required": false,
+                "displayOnCsv": true,
+                "audit": true,
+                "canUpdate": true
+            },
+            {
+                "name": "emergencyContactEmailId2",
+                "title": "Email Id",
+                "type": "EMAIL",
+                "placeHolder": "Enter Email Id",
+                "validationRegEx": "",
+                "visible": false,
+                "required": false,
+                "displayOnCsv": true,
+                "audit": true,
+                "canUpdate": true
+            },
+            {
+                "name": "emergencyContactContactNumber2",
+                "title": "Contact Number",
+                "type": "PHONENUMBER",
+                "placeHolder": "Enter Contact Number",
+                "validationRegEx": "",
+                "visible": false,
+                "required": false,
+                "displayOnCsv": true,
+                "audit": true,
+                "canUpdate": true
+            },
+            {
+                "name": "emergencyContactRelationToLead2",
+                "title": "Relation To Resident",
+                "type": "LIST",
+                "placeHolder": "Select Relationship",
+                "validationRegEx": "",
+                "required": false,
+                "disable": false,
+                "multiSelect": false,
+                "values": [
+                    {
+                        "id": "Spouse",
+                        "value": "Spouse"
+                    },
+                    {
+                        "id": "Son",
+                        "value": "Son"
+                    },
+                    {
+                        "id": "Father",
+                        "value": "Father"
+                    },
+                    {
+                        "id": "Mother",
+                        "value": "Mother"
+                    },
+                    {
+                        "id": "Daughter",
+                        "value": "Daughter"
+                    },
+                    {
+                        "id": "Friend",
+                        "value": "Friend"
+                    },
+                    {
+                        "id": "Niece",
+                        "value": "Niece"
+                    },
+                    {
+                        "id": "Nephew",
+                        "value": "Nephew"
+                    },
+                    {
+                        "id": "Grandmother",
+                        "value": "Grandmother"
+                    },
+                    {
+                        "id": "Grandfather",
+                        "value": "Grandfather"
+                    },
+                    {
+                        "id": "Aunty",
+                        "value": "Aunty"
+                    },
+                    {
+                        "id": "Uncle",
+                        "value": "Uncle"
+                    },
+                    {
+                        "id": "Cousin",
+                        "value": "Cousin"
+                    },
+                    {
+                        "id": "Sister",
+                        "value": "Sister"
+                    },
+                    {
+                        "id": "Brother",
+                        "value": "Brother"
+                    },
+                    {
+                        "id": "Other",
+                        "value": "Other"
+                    }
+                ],
+                "canUpdate": true,
+                "audit": true
+            },
+            {
+                "name": "emergencyContact2Address",
+                "title": "Address",
+                "type": "LATLONG",
+                "icon": {
+                    "url": "",
+                    "size": 30,
+                    "label": "notes",
+                    "labelOptions": {
+                        "color": "#138421",
+                        "fontSize": "18px"
+                    }
+                },
+                "showMap": true,
+                "validationRegEx": "",
+                "required": false,
+                "info": "Click on green location button",
+                "visible": false,
+                "displayOnCsv": true,
+                "visibleOnCard": true,
+                "fields": [
+                    {
+                        "name": "city",
+                        "title": "City",
+                        "type": "AUTOFILL",
+                        "autofillOptions": true,
+                        "reference_type": "locality",
+                        "placeHolder": "Enter City",
+                        "length": 100,
+                        "validationRegEx": "",
+                        "required": false,
+                        "info": "",
+                        "visible": false,
+                        "displayOnCsv": true,
+                        "visibleOnCard": true
+                    },
+                    {
+                        "name": "appartmentNumber",
+                        "title": "Apartment Number",
+                        "type": "TEXTBOX",
+                        "placeHolder": "Enter Apartment Number",
+                        "validationRegEx": "",
+                        "visible": false,
+                        "required": false,
+                        "displayOnCsv": true,
+                        "audit": true,
+                        "canUpdate": true
+                    },
+                    {
+                        "name": "state",
+                        "title": "State",
+                        "type": "AUTOFILL",
+                        "autofillOptions": true,
+                        "reference_type": "administrative_area_level_1",
+                        "placeHolder": "Enter State",
+                        "length": 100,
+                        "validationRegEx": "",
+                        "required": false,
+                        "info": "",
+                        "visible": true,
+                        "displayOnCsv": true,
+                        "visibleOnCard": true
+                    },
+                    {
+                        "name": "country",
+                        "title": "Country",
+                        "type": "AUTOFILL",
+                        "autofillOptions": true,
+                        "reference_type": "country",
+                        "placeHolder": "Enter Country",
+                        "length": 100,
+                        "validationRegEx": "",
+                        "required": false,
+                        "info": "",
+                        "visible": true,
+                        "displayOnCsv": true,
+                        "visibleOnCard": true
+                    },
+                    {
+                        "name": "zip",
+                        "title": "zip Info",
+                        "placeHolder": "Enter zip",
+                        "type": "AUTOFILL",
+                        "autofillOptions": true,
+                        "reference_type": "postal_code",
+                        "length": 100,
+                        "validationRegEx": "",
+                        "required": false,
+                        "info": "zip",
+                        "visible": false,
+                        "displayOnCsv": true,
+                        "visibleOnCard": true
+                    }
+                ],
+                "canUpdate": true,
+                "audit": false
+            },
+            {
+                "name": "medicalPOA",
+                "title": "POA/Emergency contacts",
+                "type": "SECTION",
+                "marker": "end",
+                "canUpdate": true
+            },
+            {
+                "name": "otherDirectivesList1",
+                "title": "Other Directives",
+                "type": "SECTION",
+                "description": "select all that apply",
+                "marker": "start",
+                "visible": false,
+                "canUpdate": true
+            },
+            {
+                "name": "otherDirectivesList",
+                "title": "Other Directives List",
+                "type": "LIST",
+                "placeHolder": "Select Other Directives",
+                "validationRegEx": "",
+                "required": false,
+                "visible": false,
+                "disable": false,
+                "defaultValue": "",
+                "multiSelect": true,
+                "values": [
+                    {
+                        "id": "Long Term Artificial Nutrition By Tube",
+                        "value": "Long Term Artificial Nutrition By Tube"
+                    },
+                    {
+                        "id": "Long Term Artificial Hydration By Tube",
+                        "value": "Long Term Artificial Hydration By Tube"
+                    },
+                    {
+                        "id": "Mechanical Ventilation",
+                        "value": "Mechanical Ventilation"
+                    },
+                    {
+                        "id": "Dialysis",
+                        "value": "Dialysis"
+                    },
+                    {
+                        "id": "Antibiotics",
+                        "value": "Antibiotics"
+                    },
+                    {
+                        "id": "AntiViral Medicaitions",
+                        "value": "AntiViral Medicaitions"
+                    },
+                    {
+                        "id": "Hospice or Palliative Care",
+                        "value": "Hospice or Palliative Care"
+                    },
+                    {
+                        "id": "Donate Organ or Tissue",
+                        "value": "Donate Organ or Tissue"
+                    },
+                    {
+                        "id": "Donate Body",
+                        "value": "Donate Body"
+                    },
+                    {
+                        "id": "Full Code",
+                        "value": "Full Code"
+                    }
+                ],
+                "canUpdate": true,
+                "audit": true
+            },
+            {
+                "name": "",
+                "title": "",
+                "type": "SUBSECTION",
+                "canUpdate": true
+            },
+            {
+                "name": "dnrDocument",
+                "title": "DNR/DNI Document",
+                "nameTitle": "DNR Document",
+                "descriptionTitle": "description",
+                "type": "DOCUMENT",
+                "placeHolder": "Upload DNR Document",
+                "validationRegEx": "",
+                "required": false,
+                "info": "Upload DNR Document",
+                "visible": false,
+                "displayOnCsv": true,
+                "acceptFormat": ".pdf,.doc,.docx",
+                "visibleOnCard": true,
+                "File_Limits": 3072,
+                "audit": true,
+                "canUpdate": true
+            },
+            {
+                "name": "dnrNotes",
+                "title": "DNR Notes",
+                "type": "TEXTAREA",
+                "rows": "4",
+                "widthRatio": "3",
+                "placeHolder": "Enter DNR Notes",
+                "validationRegEx": "",
+                "visible": false,
+                "required": false,
+                "displayOnCsv": true,
+                "audit": true,
+                "canUpdate": true
+            },
+            {
+                "name": "otherAdvanceDirective",
+                "title": "Other Advance Directive Info",
+                "type": "TEXTAREA",
+                "rows": "4",
+                "widthRatio": "3",
+                "placeHolder": "Enter Other Advance Directive Info",
+                "visible": false,
+                "validationRegEx": "",
+                "disable": false,
+                "displayOnCsv": true,
+                "required": false,
+                "info": "Enter Other Advance Directive Info",
+                "canUpdate": true,
+                "audit": true
+            },
+            {
+                "name": "livingWill",
+                "title": "Living Will",
+                "type": "SUBSECTION",
+                "marker": "start",
+                "visible": false,
+                "canUpdate": true
+            },
+            {
+                "name": "hasLivingWill",
+                "title": "Has Living Will",
+                "type": "RADIO",
+                "visible": false,
+                "visibleOnCsv": false,
+                "required": false,
+                "values": [
+                    {
+                        "title": "Yes",
+                        "value": true
+                    },
+                    {
+                        "title": "No",
+                        "value": false
+                    }
+                ],
+                "disable": false,
+                "canUpdate": true,
+                "info": "",
+                "audit": true
+            },
+            {
+                "name": "uploadLivingWill",
+                "title": "Upload Living Will Documents",
+                "nameTitle": "documentName",
+                "descriptionTitle": "description",
+                "type": "DOCUMENT",
+                "placeHolder": "Upload Living Will",
+                "validationRegEx": "",
+                "required": false,
+                "info": "Upload Living Will",
+                "visible": false,
+                "displayOnCsv": true,
+                "visibleOnCard": true,
+                "File_Limits": 3072,
+                "audit": true,
+                "canUpdate": true
+            },
+            {
+                "name": "advanceDirective",
+                "title": "Advance Directive",
+                "type": "SECTION",
+                "marker": "end",
+                "visible": false,
+                "canUpdate": true
+            },
+            {
+                "name": "allergies",
+                "title": "Allergies",
+                "type": "SECTION",
+                "marker": "start",
+                "description": "(List all known drug/food/miscellaneous allergies and specify allergy reactions if any in “notes”)",
+                "visible": false,
+                "canUpdate": true
+            },
+            {
+                "name": "drugAllergies",
+                "title": "Drug Allergies",
+                "type": "LIST",
+                "placeHolder": "Select Drug Allergies",
+                "validationRegEx": "",
+                "required": true,
+                "disable": false,
+                "visible": false,
+                "defaultValue": [],
+                "multiSelect": true,
+                "values": [
+                    {
+                        "id": "Penicillin",
+                        "value": "Penicillin"
+                    },
+                    {
+                        "id": "Aspirin",
+                        "value": "Aspirin"
+                    },
+                    {
+                        "id": "Painkillers",
+                        "value": "Painkillers"
+                    },
+                    {
+                        "id": "Anaesthetics",
+                        "value": "Anaesthetics"
+                    },
+                    {
+                        "id": "Xray Dyes",
+                        "value": "Xray Dyes"
+                    },
+                    {
+                        "id": "Codeine",
+                        "value": "Codeine"
+                    },
+                    {
+                        "id": "Morphine",
+                        "value": "Morphine"
+                    },
+                    {
+                        "id": "Other (add notes)",
+                        "value": "Other (add notes)",
+                        "notListed": {
+                            "otherFieldName": "otherInfo"
+                        }
+                    },
+                    {
+                        "id": "NKDA(No Known Drug Allergies)",
+                        "value": "NKDA (No Known Drug Allergies)"
+                    }
+                ],
+                "canUpdate": true,
+                "audit": true
+            },
+            {
+                "name": "otherInfo",
+                "title": "Notes",
+                "type": "TEXTAREA",
+                "rows": "4",
+                "widthRatio": "3",
+                "placeHolder": "Enter Notes Here",
+                "visible": false,
+                "validationRegEx": "",
+                "disable": false,
+                "displayOnCsv": true,
+                "required": false,
+                "info": "Enter Notes Here",
+                "canUpdate": true,
+                "audit": true
+            },
+            {
+                "name": "foodAllergies",
+                "title": "Food Allergies",
+                "type": "LIST",
+                "placeHolder": "Select Food Allergies",
+                "validationRegEx": "",
+                "required": true,
+                "disable": false,
+                "defaultValue": [],
+                "multiSelect": true,
+                "values": [
+                    {
+                        "id": "Dairy Products",
+                        "value": "Dairy Products"
+                    },
+                    {
+                        "id": "Eggs",
+                        "value": "Eggs"
+                    },
+                    {
+                        "id": "Tree Nuts",
+                        "value": "Tree Nuts"
+                    },
+                    {
+                        "id": "Peanuts",
+                        "value": "Peanuts"
+                    },
+                    {
+                        "id": "Shellfish",
+                        "value": "Shellfish"
+                    },
+                    {
+                        "id": "Wheat",
+                        "value": "Wheat"
+                    },
+                    {
+                        "id": "Soya",
+                        "value": "Soya"
+                    },
+                    {
+                        "id": "Fish",
+                        "value": "Fish"
+                    },
+                    {
+                        "id": "Other (add notes)",
+                        "value": "Other (add notes)"
+                    },
+                    {
+                        "id": "NKFA(No Known Food Allergies)",
+                        "value": "NKFA (No Known Food Allergies)"
+                    }
+                ],
+                "canUpdate": true,
+                "audit": true
+            },
+            {
+                "name": "foodAllergiesNotes",
+                "title": "Notes",
+                "type": "TEXTAREA",
+                "rows": "4",
+                "widthRatio": "3",
+                "placeHolder": "Enter Notes Here",
+                "validationRegEx": "",
+                "visible": false,
+                "required": false,
+                "displayOnCsv": true,
+                "audit": true,
+                "canUpdate": true
+            },
+            {
+                "name": "miscellaneousAllergies",
+                "title": "Miscellaneous Allergies",
+                "type": "LIST",
+                "placeHolder": "Select Drug Allergies",
+                "validationRegEx": "",
+                "required": true,
+                "disable": false,
+                "defaultValue": [],
+                "multiSelect": true,
+                "values": [
+                    {
+                        "id": "Pets/Animal",
+                        "value": "Pets/Animal"
+                    },
+                    {
+                        "id": "Insects",
+                        "value": "Insects"
+                    },
+                    {
+                        "id": "Seasonal",
+                        "value": "Seasonal"
+                    },
+                    {
+                        "id": "Pollution",
+                        "value": "Pollution"
+                    },
+                    {
+                        "id": "Cosmetics",
+                        "value": "Cosmetics"
+                    },
+                    {
+                        "id": "Cleaning Poducts",
+                        "value": "Cleaning Poducts"
+                    },
+                    {
+                        "id": "NKA (No Known Allergies)",
+                        "value": "NKA (No Known Allergies)"
+                    },
+                    {
+                        "id": "Other",
+                        "value": "Other"
+                    }
+                ],
+                "canUpdate": true,
+                "audit": true
+            },
+            {
+                "name": "allergies",
+                "title": "Allergies",
+                "type": "SECTION",
+                "marker": "end",
+                "visible": false,
+                "canUpdate": true
+            },
+            {
+                "name": "medicalHistory",
+                "title": "Drug Alcohol & Tobacco use (List all drug/alcohol/tobacco use for the last 6 months)",
+                "type": "SECTION",
+                "description": "Check all boxes that apply",
+                "marker": "start",
+                "canUpdate": true
+            },
+            {
+                "name": "tobacco",
+                "title": "Tobacco",
+                "type": "LIST",
+                "placeHolder": "Select Tobacco History",
+                "validationRegEx": "",
+                "required": false,
+                "disable": false,
+                "defaultValue": [],
+                "multiSelect": true,
+                "values": [
+                    {
+                        "id": "Smoker",
+                        "value": "Smoker"
+                    },
+                    {
+                        "id": "Former Smoker",
+                        "value": "Former Smoker"
+                    }
+                ],
+                "canUpdate": true,
+                "audit": true
+            },
+            {
+                "name": "alcohol",
+                "title": "Alcohol",
+                "type": "LIST",
+                "placeHolder": "Select Alcohol History",
+                "validationRegEx": "",
+                "required": false,
+                "disable": false,
+                "defaultValue": [],
+                "multiSelect": true,
+                "values": [
+                    {
+                        "id": "Frequent Drinker",
+                        "value": "Frequent Drinker"
+                    },
+                    {
+                        "id": "Never Drank Alcohol",
+                        "value": "Never Drank Alcohol"
+                    },
+                    {
+                        "id": "Social Drinker",
+                        "value": "Social Drinker"
+                    },
+                    {
+                        "id": "Recovering Alcoholic",
+                        "value": "Recovering Alcoholic"
+                    }
+                ],
+                "canUpdate": true,
+                "audit": true
+            },
+            {
+                "name": "drugs",
+                "title": "Drugs",
+                "type": "LIST",
+                "placeHolder": "Select Drugs History",
+                "validationRegEx": "",
+                "required": false,
+                "disable": false,
+                "defaultValue": [],
+                "multiSelect": true,
+                "values": [
+                    {
+                        "id": "Amphetamines",
+                        "value": "Amphetamines"
+                    },
+                    {
+                        "id": "Heroine",
+                        "value": "Heroine"
+                    },
+                    {
+                        "id": "Prescription Drugs",
+                        "value": "Prescription Drugs"
+                    },
+                    {
+                        "id": "Barbiturates",
+                        "value": "Barbiturates"
+                    },
+                    {
+                        "id": "LSD",
+                        "value": "LSD"
+                    },
+                    {
+                        "id": "Cocaine",
+                        "value": "Cocaine"
+                    },
+                    {
+                        "id": "Marijiuana",
+                        "value": "Marijiuana"
+                    },
+                    {
+                        "id": "Other(add notes)",
+                        "value": "Other(add notes)"
+                    }
+                ],
+                "canUpdate": true,
+                "audit": true
+            },
+            {
+                "name": "otherSocailHistory",
+                "title": "Notes",
+                "type": "TEXTAREA",
+                "rows": "4",
+                "widthRatio": "3",
+                "placeHolder": "Enter Notes Here",
+                "validationRegEx": "",
+                "visible": false,
+                "required": false,
+                "displayOnCsv": true,
+                "audit": true,
+                "canUpdate": true
+            },
+            {
+                "name": "medicalHistory",
+                "title": "Drug Alcohol & Tobacco use",
+                "type": "SECTION",
+                "marker": "end",
+                "canUpdate": true
+            },
+            {
+                "name": "admissionInformation",
+                "title": "Admission Information",
+                "type": "SECTION",
+                "marker": "start",
+                "visible": false,
+                "displayOnCsv": false,
+                "canUpdate": true
+            },
+            {
+                "name": "profilePic",
+                "title": "Resident Picture",
+                "type": "PROFILEPIC",
+                "required": false,
+                "info": "Upload Picture",
+                "visible": true,
+                "displayOnCsv": true,
+                "visibleOnCard": true,
+                "audit": true,
+                "canUpdate": true,
+                "accept": ".png, .jpeg, .jpg",
+                "sizelimit": "1 MB",
+                "searchable": false
+            },
+            {
+                "title": "AssetGOV user only - override agency",
+                "name": "stampagency",
+                "type": "REFERENCE",
+                "placeHolder": "Select Community",
+                "visible": false,
+                "displayOnCsv": true,
+                "required": false,
+                "info": "Stamp The Required Agency (Only for NA-Admin)",
+                "column": "Name",
+                "displayFields": [
+                    {
+                        "name": "Name",
+                        "friendlyName": "Stamp Community Name",
+                        "uiGridDisplay": true
+                    }
+                ],
+                "appName": "NueGov",
+                "canUpdate": true,
+                "audit": true,
+                "moduleName": "Admin",
+                "entityName": "Agency"
+            },
+            {
+                "name": "agencyuser",
+                "title": "Community Name",
+                "type": "REFERENCE",
+                "placeHolder": "Select Community",
+                "info": "Type Agency Name To Which User Belongs",
+                "uiGridDisplayFieldName": "text",
+                "required": false,
+                "displayOnCsv": true,
+                "multiSelect": false,
+                "column": "Name",
+                "displayFields": [
+                    {
+                        "name": "Name",
+                        "friendlyName": "Community Name",
+                        "uiGridDisplay": true
+                    }
+                ],
+                "appName": "NueGov",
+                "canUpdate": true,
+                "audit": true,
+                "moduleName": "Admin",
+                "entityName": "Agency",
+                "visible": false
+            },
+            {
+                "name": "memberstatus",
+                "title": "Status",
+                "type": "LIST",
+                "placeHolder": "Select Resident Status",
+                "validationRegEx": "",
+                "required": true,
+                "visible": true,
+                "disable": false,
+                "defaultValue": "Admitted",
+                "multiSelect": false,
+                "values": [
+                    {
+                        "id": "Admitted",
+                        "value": "Admitted",
+                        "variant": "success",
+                        "color": "#29c361"
+                    },
+                    {
+                        "id": "Discharged",
+                        "value": "Discharged",
+                        "variant": "secondary",
+                        "color": "#004d66"
+                    },
+                    {
+                        "id": "Deceased",
+                        "value": "Deceased",
+                        "variant": "primary",
+                        "color": "#ff0000"
+                    }
+                ],
+                "canUpdate": true,
+                "audit": true
+            },
+            {
+                "name": "dateOfJoining",
+                "title": "Admission Date",
+                "type": "DATE",
+                "format": "MM-dd-yyyy",
+                "mobileFormat": "MM/DD/YYYY",
+                "placeHolder": "Select Date",
+                "info": "Select Date Of Admission",
+                "validationRegEx": "",
+                "visible": false,
+                "visibleOnCsv": false,
+                "displayOnCsv": true,
+                "required": false,
+                "canUpdate": true
+            },
+            {
+                "name": "startOfCareDate",
+                "title": "Initial Start Of Care Date",
+                "type": "DATE",
+                "format": "MM-dd-yyyy",
+                "mobileFormat": "MM/DD/YYYY",
+                "placeHolder": "Select SOC Date",
+                "info": "Select SOC Date",
+                "validationRegEx": "",
+                "visible": true,
+                "visibleOnCsv": false,
+                "displayOnCsv": true,
+                "required": true,
+                "canUpdate": true
+            },
+            {
+                "name": "lastAssessmentDate",
+                "title": "Last Assessment Date",
+                "type": "DATE",
+                "format": "MM-dd-yyyy",
+                "mobileFormat": "MM/DD/YYYY",
+                "placeHolder": "Select Date",
+                "info": "Select Last Assessment Date",
+                "validationRegEx": "",
+                "visible": false,
+                "visibleOnCsv": false,
+                "displayOnCsv": true,
+                "displayOnReports": false,
+                "required": false,
+                "canUpdate": true
+            },
+            {
+                "name": "nextAssessmentDate",
+                "title": "Next Assessment Date",
+                "type": "DATE",
+                "format": "MM-dd-yyyy",
+                "mobileFormat": "MM/DD/YYYY",
+                "placeHolder": "Select Date",
+                "info": "Select Next Assessment Date",
+                "validationRegEx": "",
+                "visible": true,
+                "visibleOnCsv": false,
+                "displayOnCsv": true,
+                "displayOnReports": false,
+                "required": false,
+                "canUpdate": true
+            },
+            {
+                "name": "roomBed",
+                "title": "Room/Bed",
+                "type": "SUBSECTION",
+                "marker": "start",
+                "description": "(Assign room& bed from the list below)",
+                "visible": false,
+                "canUpdate": true
+            },
+            {
+                "name": "bed",
+                "title": "Bed Assigned",
+                "type": "REFERENCE",
+                "info": "Bed",
+                "validationRegEx": "",
+                "required": false,
+                "visible": false,
+                "colSpan": 2,
+                "width": "600px",
+                "displayOnReports": true,
+                "placeHolder": "Select Bed",
+                "column": "",
+                "displayFields": [
+                    {
+                        "name": "name",
+                        "friendlyName": "name"
+                    },
+                    {
+                        "name": "bedNumber",
+                        "friendlyName": "Number"
+                    },
+                    {
+                        "name": "status",
+                        "friendlyName": "Status",
+                        "includes": [
+                            {
+                                "value": "Vacant",
+                                "color": "#29c361"
+                            },
+                            {
+                                "value": "Partially Vacant",
+                                "color": "#6992ce"
+                            }
+                        ]
+                    }
+                ],
+                "delimiter": " ",
+                "displayOnCsv": true,
+                "canUpdate": true,
+                "appName": "NueAssist",
+                "audit": true,
+                "moduleName": "Community",
+                "entityName": "Bed",
+                "parentInfo": {
+                    "name": "room",
+                    "title": "Room",
+                    "type": "REFERENCE",
+                    "placeHolder": "Select Room",
+                    "visible": true,
+                    "displayOnCsv": true,
+                    "required": false,
+                    "colSpan": 2,
+                    "width": "600px",
+                    "info": "",
+                    "column": "",
+                    "displayFields": [
+                        {
+                            "name": "name",
+                            "friendlyName": "Room Name",
+                            "uiGridDisplay": true
+                        }
+                    ],
+                    "appName": "NueAssist",
+                    "canUpdate": true,
+                    "audit": true,
+                    "moduleName": "Community",
+                    "entityName": "Room"
+                }
+            },
+            {
+                "name": "admissionInformation",
+                "title": "Admission Information",
+                "type": "SECTION",
+                "marker": "end",
+                "visible": false,
+                "displayOnCsv": false,
+                "canUpdate": true
+            },
+            {
+                "name": "systemInfo",
+                "title": "Login Info",
+                "type": "SECTION",
+                "marker": "start",
+                "visible": false,
+                "canUpdate": true
+            },
+            {
+                "name": "username",
+                "title": "Login Name",
+                "type": "TEXTBOX",
+                "info": "Eg: sample@CommunityName.com(Unique Name)",
+                "placeHolder": "Eg: sample@CommunityName.com(Unique Name)",
+                "length": 255,
+                "transient": true,
+                "unique": true,
+                "hideOnDetail": true,
+                "visible": false,
+                "required": true,
+                "displayOnCsv": true,
+                "canUpdate": true,
+                "displayOnReports": false,
+                "audit": true
+            },
+            {
+                "name": "password",
+                "title": "Password",
+                "type": "PASSWORD",
+                "info": "Enter strong password",
+                "placeHolder": "Enter strong password",
+                "length": 255,
+                "transient": true,
+                "hideOnDetail": true,
+                "required": true,
+                "visible": false,
+                "enablePasswordCriteria": true,
+                "canUpdate": true,
+                "audit": true
+            },
+            {
+                "name": "forceReset",
+                "title": "Reset Password",
+                "type": "RADIO",
+                "required": false,
+                "defaultValue": false,
+                "visible": false,
+                "displayOnReports": false,
+                "visibleOnCsv": true,
+                "info": "Resets password and redirect to change password screen on next login",
+                "values": [
+                    {
+                        "title": "Yes",
+                        "value": true
+                    },
+                    {
+                        "title": "No",
+                        "value": false
+                    }
+                ],
+                "displayOnCsv": true,
+                "hideOnDetail": true,
+                "disable": false,
+                "canUpdate": true,
+                "audit": true
+            },
+            {
+                "name": "",
+                "title": "",
+                "type": "SUBSECTION",
+                "canUpdate": true
+            },
+            {
+                "name": "notification",
+                "title": "Send Email Notification",
+                "type": "RADIO",
+                "hideOnDetail": true,
+                "placeHolder": "Set The Value As True To Send Notification To This User",
+                "info": "Set The Value As True To Send Notification To This User If Not Set As False",
+                "visibleOnCsv": true,
+                "required": false,
+                "displayOnReports": false,
+                "defaultValue": false,
+                "values": [
+                    {
+                        "title": "Yes",
+                        "value": true
+                    },
+                    {
+                        "title": "No",
+                        "value": false
+                    }
+                ],
+                "disable": false,
+                "canUpdate": true,
+                "audit": true
+            },
+            {
+                "name": "signature",
+                "title": "Signature",
+                "placeHolder": "Signature",
+                "type": "SIGNATURE",
+                "hideOnDetail": true,
+                "info": "Default Signature Of The User",
+                "required": false,
+                "canUpdate": true,
+                "audit": true,
+                "disable": false,
+                "config": {
+                    "Features": [
+                        "AUTOFILL",
+                        "ADDTOPROFILE"
+                    ]
+                }
+            },
+            {
+                "name": "systemInfo",
+                "title": "Login Info",
+                "type": "SECTION",
+                "marker": "end",
+                "visible": false,
+                "canUpdate": true
+            }
+        ]
+}
